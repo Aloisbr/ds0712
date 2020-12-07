@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/contact.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+2|Lobster&display=swap" rel="stylesheet">
+    <script src="./js/popup.js" defer></script>
+</head>
+<body>
+    <header class='topbar'>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="galerie.html">Galerie</a>
+            <a href="contact.html" class="active">Contact</a>
+        </nav>
+        <div class="social">
+            <a href="" title="Facebook"><img title="Facebook" src="img/facebook.png"></a>
+            <a href="" title="Twitter"><img title="Twitter" src="img/twitter.png"></a>
+        </div>
+    </header>
+    <div class="banner"></div>
+    <div class="body">
+        <main class="main">
+            <div class="container container-2">
+                <h1 class="title title-1">Contact</h1>
+                <div class="form_group">
+                    <input type="text" class="form_input" id="name" placeholder="Votre Nom" required>
+                </div>
+                <div class="form_group">
+                    <input type="email" class="form_input" id="email" placeholder="Votre Email" required>
+                </div>
+                <div class="form_group">
+                    <input type="number" class="form_input" id="age" placeholder="Votre Age" required min="16" max="99" step="1">
+                </div>
+                <div class="form_message">
+                    <label for="" class="form_message-label">
+                        Message complémentaire (facultatif) :
+                    </label>
+                    <textarea name="" id="message" cols="30" rows="10" class="form_input message_input"></textarea>
+                </div>
+                <div class="submit">
+                    <button class="submit-btn" id="submit" onclick="openModal()">Envoyer</button>
+                </div>
+                <div id="modal">
+                    <p>Message envoyé !</p>
+                    <button id="close" onclick="closeModal()"><img src="./img/fermer.png"></button>
+                </div>
+            </div>
+        </main>
+        <aside class="sidebar">
+            <h4 class="sidebar-title">Catégorie</h4>
+            <ul>
+                <li><a href="#">BD</a></li>
+                <li><a href="#">Capitale</a></li>
+                <li><a href="#">Marianne</a></li>
+            </ul>
+            <hr>
+            <h4 class="sidebar-title">Époque</h4>
+            <ul>
+                <li><a href="#">XXI Siècle</a></li>
+                <li><a href="#">XX Siècle</a></li>
+                <li><a href="#">XIX Siècle</a></li>
+            </ul>
+        </aside>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <p>Copyright</p>
+        </div>
+    </footer>
+</body>
+</html>
